@@ -25,7 +25,7 @@ h1 {
 margin: 0 auto;
 list-style-type: none;
 }
-.flex-outer li {
+.flex-outer li, .flex-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -40,3 +40,8 @@ padding: 8px;
   letter-spacing: .09em;
   text-transform: uppercase;
 }
+
+.flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
