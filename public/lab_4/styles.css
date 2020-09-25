@@ -1,4 +1,9 @@
-
+body {
+    width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+  background-color: #6091C3;
+}
 
 h1 {
     font-size: 4rem;
