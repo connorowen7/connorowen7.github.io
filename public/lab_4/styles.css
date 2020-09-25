@@ -16,4 +16,6 @@ h1 {
 display: flex;
 flex-wrap: wrap;
 align-items: center;
+list-style-type: none;
 }
+.flex-outer li 
