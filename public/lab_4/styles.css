@@ -15,14 +15,20 @@ h1 {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+.container * {
     box-sizing: border-box;
 }
 
 .flex-outer {
-display: flex;
-flex-wrap: wrap;
-align-items: center;
+    max-width: 800px;
+margin: 0 auto;
 list-style-type: none;
+}
+.flex-outer li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 .flex-outer li label {
     position: relative;
