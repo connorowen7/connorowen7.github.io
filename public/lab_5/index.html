@@ -81,7 +81,8 @@
                 title.innerHTML = response;
                 const center = document.querySelector('.flex-outer')
                 center.style = 'margin: 0 auto;';
-
+                const newColor = 'rgb(' + (255) + ',' + (69) + ',' + (0) + ')';
+                document.body.style.backgroundColor = newColor;
                 const fruits = document.querySelectorAll('.flex-inner > li > label')
                     const fruitList = ['Apple', 'Pineapple', 'Orange']
                         fruits.forEach((el,i) => {
