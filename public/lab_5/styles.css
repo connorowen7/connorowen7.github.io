@@ -20,6 +20,7 @@ h1 {
 .container {
     width: 80%;
     margin: 0 auto;
+    max-width: 1200px;
 }
 .container * {
     box-sizing: border-box;
@@ -37,7 +38,7 @@ margin-left: 0px;
     align-items: center;
 }
 .flex-outer > li > label, .flex-outer li p{
-  flex: 1 0 120px;
+  flex: 1 0 125px;
   max-width: 220px;
 }
 .flex-outer li label, .flex-outer li p {
