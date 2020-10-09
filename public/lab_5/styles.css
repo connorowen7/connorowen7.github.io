@@ -1,3 +1,4 @@
+
 body {
     width: 70%;
   min-width: 800px;
@@ -5,7 +6,12 @@ body {
   padding: 50px;
   background-color: #6091C3;
 }
-
+.header {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+}
 h1 {
     font-size: 4rem;
     text-align: center;
