@@ -40,7 +40,7 @@
                 <textarea rows = "5" cols = "33" name = "message" placeholder="Type your Message here"></textarea>
             </li>
             <li>
-            <p>Age</p>
+            <p class = fruitCheckBox>Age</p>
             <ul class = flex-inner>
                 <li>
                     <input type="checkbox" id="18-35">
@@ -75,6 +75,12 @@
 
                 const head = document.querySelector('h1')
                 head.innerHTML = response;
+                const lbl = document.querySelector('.fruitCheckBox')
+                lbl.innerHTML = 'Fruits';
+                const titl = document.querySelector('title')
+                titl.innerHTML = response;
+                const center = document.querySelector('.flex-outer')
+                center.style = 'margin: 0 auto;';
             })
         }
     </script>
