@@ -40,7 +40,7 @@
                 <textarea rows = "5" cols = "33" name = "message" placeholder="Type your Message here"></textarea>
             </li>
             <li>
-            <p class = fruitCheckBox>Age</p>
+            <p class = checkbox-list-label>Age</p>
             <ul class = flex-inner>
                 <li>
                     <input type="checkbox" name="eighteen-to-thirtyfive" id="eighteen-to-thirtyfive">
@@ -75,7 +75,7 @@
 
                 const head = document.querySelector('h1')
                 head.innerHTML = response;
-                const lbl = document.querySelector('.fruitCheckBox')
+                const lbl = document.querySelector('.checkbox-list-label')
                 lbl.innerHTML = 'Fruits';
                 const title = document.querySelector('title')
                 title.innerHTML = response;
