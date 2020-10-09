@@ -7,8 +7,8 @@ body {
 .header {
   display: flex;
   margin-bottom: 15px;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 h1 {
     font-size: 4rem;
@@ -59,7 +59,7 @@ padding: 8px;
   .flex-outer > li:not(:last-child) {
     margin-bottom: 20px;
   }
-  
+
   .flex-outer li button {
     margin-right: 10px;
     margin-left: 0px;
