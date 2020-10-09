@@ -81,6 +81,13 @@
                 title.innerHTML = response;
                 const center = document.querySelector('.flex-outer')
                 center.style = 'margin: 0 auto;';
+
+                const fruits = document.querySelectorAll('.flex-inner > li > label')
+                    const fruitList = ['Apple', 'Pineapple', 'Orange']
+                        fruits.forEach((el,i) => {
+                        const text = el.innerText;
+                        el.innerText = fruitList[i];
+                    })
             })
         }
     </script>
