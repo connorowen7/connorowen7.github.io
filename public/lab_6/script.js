@@ -32,10 +32,10 @@ document.body.addEventListener('submit', async (e) => {
       // You're going to do your lab work in here. Replace this comment.
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
-          return true
+          return true;
         }
       });
-      console.table(ten)
+      console.table(ten);
       console.log('fromServer', fromServer);
     })
     .catch((err) => console.log(err));
