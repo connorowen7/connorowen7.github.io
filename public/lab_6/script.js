@@ -32,11 +32,14 @@ document.body.addEventListener('submit', async (e) => {
 
       const countriesA = range(10);
 
-      const countriesA2 = countriesA.map(function copy()){
+      const countriesA2 = countriesA.map(copyFunction)
+
+      function copyFunction() {
         const country = randomInt(0, 243);
         return fromServer[country];
       }
       
+      //const reverse = countriesA2(())
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
           return true;
