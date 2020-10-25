@@ -29,9 +29,14 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      
-      const countries = range(10);
 
+      const countriesA = range(10);
+
+      const countriesA2 = countriesA.map(function copy()){
+        const country = randomInt(0, 243);
+        return fromServer[country];
+      }
+      
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
           return true;
