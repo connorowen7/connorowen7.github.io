@@ -29,7 +29,9 @@ document.body.addEventListener('submit', async (e) => {
   })
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
-      // You're going to do your lab work in here. Replace this comment.
+      
+      const countries = range(10);
+
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
           return true;
