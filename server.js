@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 app.route('/api')
   .get((req, res) => {
     console.log('GET request detected');
-    res.send(`Lab 5 for Connor Owen`);
+    res.send(`Lab 6 for Connor Owen`);
   })
   .post((req, res) => {
     res.json(countries);
