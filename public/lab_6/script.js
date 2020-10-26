@@ -44,13 +44,23 @@ document.body.addEventListener('submit', async (e) => {
       function reverseFunction(a, b){
         sortFunction(b, a, 'name');
       }
+
+      const ul = document.createElement('ul');
+      ul.className = 'flex-inner';
+      $('form').prepend(ul);
+
+      reverse.forEach((element, idx) => {
+        const li = document.createElement('li');
+        $(li).append(`<input type="checkbox" value=${element.code} id=${element.code} />`);
+        $(li).append(`<label for=${element.code}>${element.name}</label>`);
+        $(ul).append(li);
+      })
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
           return true;
         }
       });
-      console.table(ten);
-      console.log('fromServer', fromServer);
+      
     })
     .catch((err) => console.log(err));
 });
