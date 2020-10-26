@@ -36,18 +36,18 @@ document.body.addEventListener('submit', async (e) => {
       
       const countriesA = range(10);
 
-      const countriesA2 = countriesA.map(copyFunction)
+      const countriesA2 = countriesA.map(copyFunction)(
 
       function copyFunction() {
         const country = randomInt(0, 243);
         return fromServer[country];
-      }
+      })
 
-      const reverse = countriesA2.sort(reverseFunction)
+      const reverse = countriesA2.sort(reverseFunction)(
 
       function reverseFunction(a, b){
         sortFunction(b, a, 'name');
-      }
+      })
 
       const ul = document.createElement('ul');
       ul.className = 'flex-inner';
