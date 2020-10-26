@@ -30,6 +30,10 @@ document.body.addEventListener('submit', async (e) => {
     .then((fromServer) => fromServer.json())
     .then((fromServer) => {
 
+      if (document.querySelector('.flex-inner')) {
+        document.querySelector('.flex-inner').remove();
+      }
+      
       const countriesA = range(10);
 
       const countriesA2 = countriesA.map(copyFunction)
@@ -54,13 +58,8 @@ document.body.addEventListener('submit', async (e) => {
         $(li).append(`<input type="checkbox" value=${element.code} id=${element.code} />`);
         $(li).append(`<label for=${element.code}>${element.name}</label>`);
         $(ul).append(li);
-      })
-      const ten = countries.filter(function(countries){
-        if(countries.name.contains('A')){
-          return true;
-        }
       });
-      
+     
     })
     .catch((err) => console.log(err));
 });
