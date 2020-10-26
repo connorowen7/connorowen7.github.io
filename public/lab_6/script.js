@@ -38,8 +38,12 @@ document.body.addEventListener('submit', async (e) => {
         const country = randomInt(0, 243);
         return fromServer[country];
       }
-      
-      //const reverse = countriesA2(())
+
+      const reverse = countriesA2.sort(reverseFunction)
+
+      function reverseFunction(a, b){
+        sortFunction(b, a, 'name');
+      }
       const ten = countries.filter(function(countries){
         if(countries.name.contains('A')){
           return true;
