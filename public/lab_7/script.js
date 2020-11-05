@@ -46,7 +46,7 @@ function makeYourOptionsObject(datapointsFromRestaurantsList) {
       gridColor: 'rgba(1,77,101,.1)',
       title: 'Places to Eat',
       labelFontSize: 12,
-      scaleBreaks: {customBreaks: [{startValue:30, endValue: 60, color: '#2BCCD2'}, {startValue: 90, endValue:120, color: '#2BCCD2'}, {startValue: 150, endValue: 190, color: '#2BBCCD2'}]} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
+      scaleBreaks: {customBreaks: [{startValue:40, endValue: 50, color: '#2BCCD2'}, {startValue: 85, endValue:100, color: '#2BCCD2'}, {startValue: 140, endValue: 175, color: '#2BBCCD2'}]} // Add your scale breaks here https://canvasjs.com/docs/charts/chart-options/axisy/scale-breaks/custom-breaks/
     },
     data: [{
       type: 'bar',
